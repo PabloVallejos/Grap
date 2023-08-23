@@ -15,7 +15,7 @@ public class Parallax : MonoBehaviour
         cam = GameObject.FindGameObjectWithTag("MainCamera");
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         float temp = (cam.transform.position.x * (1 - FX));
         float dist = (cam.transform.position.x * FX);

@@ -9,10 +9,12 @@ public class Controller : MonoBehaviour
     Animator anima;
     SpriteRenderer spr;
     public Transform check;
+
     bool land;
     public float speed;
-    public float jump;
+    //public float jump;
     public float maxS;
+    public int health = 3;
 
     void Start()
     {
@@ -21,7 +23,7 @@ public class Controller : MonoBehaviour
         spr = GetComponent<SpriteRenderer>();
     }
 
-    void Update()
+    void FixedUpdate()
     {
         dir.x = Input.GetAxis("Horizontal");
         if (rb.velocity.x < maxS && rb.velocity.x > -maxS)
@@ -44,8 +46,13 @@ public class Controller : MonoBehaviour
 
         if (collision.gameObject.tag == "Pit")
         {
-            transform.position = check.position;
-            rb.velocity = Vector2.zero;
+            if (health > 0)
+            {
+                collision.gameObject.GetComponent<AudioSource>().Play();
+                health--;
+                transform.position = check.position;
+                rb.velocity = Vector2.zero;
+            } else { Destroy(this.gameObject); }
         }
 
         if (collision.gameObject.tag == "Bug")

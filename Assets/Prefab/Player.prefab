@@ -37,7 +37,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &136646972459118453
 SpriteRenderer:
@@ -176,9 +176,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   check: {fileID: 0}
-  speed: 0.5
-  jump: 150
-  maxS: 5
+  speed: 5
+  maxS: 10
 --- !u!232 &136646972459118440
 DistanceJoint2D:
   m_ObjectHideFlags: 0
@@ -197,7 +196,7 @@ DistanceJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_AutoConfigureDistance: 1
-  m_Distance: 7.0918612
+  m_Distance: 1.432934
   m_MaxDistanceOnly: 0
 --- !u!120 &136646972459118441
 LineRenderer:
@@ -295,7 +294,7 @@ LineRenderer:
     numCornerVertices: 0
     numCapVertices: 0
     alignment: 0
-    textureMode: 0
+    textureMode: 1
     textureScale: {x: 1, y: 1}
     shadowBias: 0.5
     generateLightingData: 0
@@ -318,6 +317,7 @@ MonoBehaviour:
   cam: {fileID: 0}
   obj: {fileID: 0}
   climbSpeed: 10
+  camLimit: 0
   maxD: 6
 --- !u!95 &136646972459118447
 Animator:

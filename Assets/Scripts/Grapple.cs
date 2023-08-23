@@ -45,6 +45,7 @@ public class Grapple : MonoBehaviour
             line.SetPosition(1, transform.position);*/
             if (obj.tag == "Grappable" && dist <= maxD)
             {
+                Debug.Log("Grabbed");
                 anima.SetBool("Tongue", false);
                 anima.SetBool("Hang", true);
                 jnt.enabled = true;
