@@ -23,8 +23,9 @@ public class Points : MonoBehaviour
         txt[2].text = timer.ToString("0");
         if (cnt == null)
         {
+            FindObjectOfType<WLButton>().YouWinLose(0);
             bot.gameObject.SetActive(true);
-            txt[3].text = "Perdiste :(";
+            //txt[3].text = "Perdiste :(";
         }
         else
         {

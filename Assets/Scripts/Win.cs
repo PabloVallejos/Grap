@@ -20,6 +20,7 @@ public class Win : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        GameObject.FindObjectOfType<WLButton>().YouWinLose(1);
         but.gameObject.SetActive(true);
         bgm.Stop();
         snd.Play();

@@ -46,7 +46,7 @@ public class Controller : MonoBehaviour
 
         if (collision.gameObject.tag == "Pit")
         {
-            if (health > 0)
+            if (health > 1)
             {
                 collision.gameObject.GetComponent<AudioSource>().Play();
                 health--;

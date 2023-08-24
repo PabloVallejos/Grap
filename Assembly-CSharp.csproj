@@ -65,6 +65,7 @@
     <Compile Include="Assets\Tuesday\TileMap.cs" />
     <Compile Include="Assets\Scripts\Win.cs" />
     <Compile Include="Assets\Scripts\Bug.cs" />
+    <Compile Include="Assets\Scripts\WLButton.cs" />
     <Compile Include="Assets\Scripts\Controller.cs" />
     <Compile Include="Assets\Scripts\ChangeS.cs" />
     <Compile Include="Assets\Scripts\Grapple.cs" />
