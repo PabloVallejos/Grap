@@ -178,6 +178,7 @@ MonoBehaviour:
   check: {fileID: 0}
   speed: 5
   maxS: 10
+  health: 3
 --- !u!232 &136646972459118440
 DistanceJoint2D:
   m_ObjectHideFlags: 0
@@ -251,7 +252,7 @@ LineRenderer:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 1
+        value: 0.26890588
         inSlope: 0
         outSlope: 0
         tangentMode: 0

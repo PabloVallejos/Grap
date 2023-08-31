@@ -61,6 +61,7 @@
     <Compile Include="Assets\Tuesday\Clipper.cs" />
     <Compile Include="Assets\Scripts\Grappable.cs" />
     <Compile Include="Assets\Tuesday\Tiled.cs" />
+    <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\Points.cs" />
     <Compile Include="Assets\Tuesday\TileMap.cs" />
     <Compile Include="Assets\Scripts\Win.cs" />

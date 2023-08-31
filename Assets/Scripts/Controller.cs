@@ -60,4 +60,22 @@ public class Controller : MonoBehaviour
             collision.gameObject.GetComponent<Bug>().AddPoints();
         }
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Ground")
+        {
+            transform.rotation = Quaternion.Euler(0,0,0);
+        }
+
+        if (collision.gameObject.tag == "Enemy")
+        {
+            if (health > 1)
+            {
+                collision.gameObject.GetComponent<AudioSource>().Play();
+                health--;
+            }
+            else { Destroy(this.gameObject); }
+        }
+    }
 }
