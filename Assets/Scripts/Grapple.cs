@@ -5,7 +5,8 @@ using UnityEngine;
 public class Grapple : MonoBehaviour
 {
     public Camera cam;
-    public GameObject obj; 
+    public GameObject obj;
+    public AudioClip clip;
     public float climbSpeed;
     public float camLimit;
     LineRenderer line;
@@ -37,6 +38,8 @@ public class Grapple : MonoBehaviour
         distL = Vector3.Distance(line.GetPosition(0), line.GetPosition(1));
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
+            GetComponent<AudioSource>().clip = clip;
+            GetComponent<AudioSource>().Play();
             Vector2 mous = (Vector2)cam.ScreenToWorldPoint(Input.mousePosition);
             dist = Vector3.Distance(transform.position, mous);
             anima.SetBool("Tongue", true);

@@ -9,6 +9,7 @@ public class Controller : MonoBehaviour
     Animator anima;
     SpriteRenderer spr;
     public Transform check;
+    public AudioClip clip;
 
     bool land;
     public float speed;
@@ -58,6 +59,8 @@ public class Controller : MonoBehaviour
         if (collision.gameObject.tag == "Bug")
         {
             collision.gameObject.GetComponent<Bug>().AddPoints();
+            GetComponent<AudioSource>().clip = clip;
+            GetComponent<AudioSource>().Play();
         }
     }
 
