@@ -9,6 +9,7 @@ public class Points : MonoBehaviour
     public Button bot;
     public Controller cnt;
     public int points = 0;
+    public bool done = false;
     float timer;
 
     private void Start()
@@ -23,11 +24,16 @@ public class Points : MonoBehaviour
         txt[2].text = timer.ToString("0");
         if (cnt == null)
         {
-            FindObjectOfType<WLButton>().YouWinLose(0);
+            //FindObjectOfType<WLButton>().YouWinLose(0);
+            done = true;
             bot.gameObject.SetActive(true);
             //txt[3].text = "Perdiste :(";
         }
-        else
+        /*else
+        {
+            timer += Time.deltaTime;
+        }*/
+        if (!done)
         {
             timer += Time.deltaTime;
         }

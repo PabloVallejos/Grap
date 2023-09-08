@@ -53,7 +53,7 @@ public class Controller : MonoBehaviour
                 health--;
                 transform.position = check.position;
                 rb.velocity = Vector2.zero;
-            } else { Destroy(this.gameObject); }
+            } else { FindObjectOfType<WLButton>().YouWinLose(0); Destroy(this.gameObject); }
         }
 
         if (collision.gameObject.tag == "Bug")
@@ -78,7 +78,7 @@ public class Controller : MonoBehaviour
                 collision.gameObject.GetComponent<AudioSource>().Play();
                 health--;
             }
-            else { Destroy(this.gameObject); }
+            else { FindObjectOfType<WLButton>().YouWinLose(0); Destroy(this.gameObject); }
         }
     }
 }

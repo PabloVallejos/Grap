@@ -21,10 +21,12 @@ public class Win : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         GameObject.FindObjectOfType<WLButton>().YouWinLose(1);
+        GameObject.FindObjectOfType<Points>().done = true;
         but.gameObject.SetActive(true);
-        bgm.Stop();
-        snd.Play();
+        /*bgm.Stop();
+        snd.Play();*/
         cnt.GetComponent<Rigidbody2D>().isKinematic = true;
+        cnt.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
         cnt.GetComponent<Grapple>().enabled = false;
         cnt.enabled = false;
         //grp.enabled = false;

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 05f478e40839c5e41beb4f4b1fc51b87
+guid: 17438ce91dcfb37488d5c6b32f407d2e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -107,64 +107,169 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: llegada-Sheet_0
+      name: animacioninicio-Sheet_0
       rect:
         serializedVersion: 2
-        x: 12
-        y: 1
-        width: 25
-        height: 25
+        x: 0
+        y: 0
+        width: 246
+        height: 50
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fad18cdb0778c4a488cafa2648e07bc2
-      internalID: -2109707785
+      spriteID: 86edc6652b1b9de45992a533c5f61659
+      internalID: -716829913
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: llegada-Sheet_1
+      name: animacioninicio-Sheet_1
       rect:
         serializedVersion: 2
-        x: 52
-        y: 2
-        width: 42
-        height: 28
+        x: 246
+        y: 0
+        width: 246
+        height: 50
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9518baf15c1a65e41a34bea10e2d087d
-      internalID: 1180711053
+      spriteID: 8c9b9fa62a268614faabfa2a05931d14
+      internalID: 1537171481
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: llegada-Sheet_2
+      name: animacioninicio-Sheet_2
       rect:
         serializedVersion: 2
-        x: 96
-        y: 3
-        width: 48
-        height: 27
+        x: 492
+        y: 0
+        width: 246
+        height: 50
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8ab590e3daf6cb549892b1e0941c96a2
-      internalID: 8499841
+      spriteID: 2fc42235e724c13459332b08041f866e
+      internalID: 1627037885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacioninicio-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 0
+        width: 246
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24f89c8aec2d2d04899f7b1c1f0a89de
+      internalID: 812795037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacioninicio-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 0
+        width: 246
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f3012490b4e17a4b8588f0292d9b378
+      internalID: -1848907097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacioninicio-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 0
+        width: 246
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32012a1d1f8e59a428f35d89f827791c
+      internalID: 1350439939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacioninicio-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 1476
+        y: 0
+        width: 246
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 899d9a4aabab8e5439771852ddfe2c23
+      internalID: -844713560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacioninicio-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 1722
+        y: 0
+        width: 246
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0c2a1997c46aa64fa16e6b72ed660ed
+      internalID: 516169401
       vertices: []
       indices: 
       edges: []
@@ -180,9 +285,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      llegada-Sheet_0: -2109707785
-      llegada-Sheet_2: 8499841
-      llegada-Sheet_1: 1180711053
+      animacioninicio-Sheet_1: 1537171481
+      animacioninicio-Sheet_0: -716829913
+      animacioninicio-Sheet_7: 516169401
+      animacioninicio-Sheet_2: 1627037885
+      animacioninicio-Sheet_6: -844713560
+      animacioninicio-Sheet_3: 812795037
+      animacioninicio-Sheet_4: -1848907097
+      animacioninicio-Sheet_5: 1350439939
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
