@@ -84,11 +84,11 @@ public class Grapple : MonoBehaviour
     {
         if (jnt.distance <= maxD)
         {
-            if (Input.GetAxis("Vertical") >= 0.1f && jnt.enabled && !coll)
+            if (Input.GetAxis("Vertical") >= 0.1f && jnt.enabled/* && !coll*/)
             {
                 jnt.distance -= Time.deltaTime * climbSpeed;
             }
-            else if (Input.GetAxis("Vertical") < 0f && jnt.enabled)
+            else if (Input.GetAxis("Vertical") < 0f && jnt.enabled && !coll)
             {
                 jnt.distance += Time.deltaTime * climbSpeed;
             }

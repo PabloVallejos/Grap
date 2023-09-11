@@ -10,7 +10,7 @@ public class ChangeS : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Escape))
         {
-            Application.Quit();
+            SceneManager.LoadScene("Menu");
         }
     }
     public void ChangeScene(string next)
