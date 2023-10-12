@@ -17,4 +17,8 @@ public class ChangeS : MonoBehaviour
     {
         SceneManager.LoadScene(next);
     }
+    public void Salir()
+    {
+        Application.Quit();
+    }
 }
